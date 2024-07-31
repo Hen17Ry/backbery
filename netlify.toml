@@ -5,7 +5,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-Origin = "http://localhost:5173" # Changez cette URL pour celle de votre frontend
+    Access-Control-Allow-Origin = "https://66aab92b521aed23d39ece23--chimerical-horse-59e7c6.netlify.app" # Changez cette URL pour celle de votre frontend
     Access-Control-Allow-Methods = "GET, POST, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type"
     Access-Control-Allow-Credentials = "true"

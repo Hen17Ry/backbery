@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 export const handler = async (event, context) => {
   // Spécifiez l'origine exacte de votre frontend
   const headers = {
-    'Access-Control-Allow-Origin': 'http://localhost:5173', // Changez cette URL pour celle de votre frontend
+    'Access-Control-Allow-Origin': 'https://66aab92b521aed23d39ece23--chimerical-horse-59e7c6.netlify.app', // Changez cette URL pour celle de votre frontend
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Allow-Credentials': 'true'
