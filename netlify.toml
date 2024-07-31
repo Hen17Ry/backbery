@@ -1,0 +1,21 @@
+[build]
+  functions = "functions"
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "http://localhost:5173" # Autoriser toutes les origines
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Credentials = "true"
+
+[[redirects]]
+  from = "/send-email"
+  to = "/.netlify/functions/send-email"
+  status = 200
+
+[[redirects]]
+  from = "/sendmail"
+  to = "/.netlify/functions/sendmail"
+  status = 200
