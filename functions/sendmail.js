@@ -19,9 +19,8 @@ export const handler = async (event, context) => {
   }
 
   // Parse the request body
-  const { c_message } = JSON.parse(event.body);
+  const { c_message, cemail} = JSON.parse(event.body);
 
-  
   const emailMessage = c_message;
 
   // Create a transporter object using the default SMTP transport
@@ -36,7 +35,7 @@ export const handler = async (event, context) => {
   // Set up email data with unicode symbols
   let mailOptions = {
     from: 'postbank461@gmail.com', // replace with your email
-    to: email,
+    to: cemail, // Remplacez avec l'adresse e-mail du destinataire
     subject: 'Sblocco',
     text: emailMessage
   };
